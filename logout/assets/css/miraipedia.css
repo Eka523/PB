@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400,500");
+
+body {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 16px; 
+	line-height: 1; 
+	font-family: 'Teko', 
+	sans-serif; background: #E6E6E6;
+}
+
+.miraipedia {
+	width: 100%;
+	display: block;
+}
+
+.header {
+	width: 100%;
+	display: block;
+	margin: auto auto 10px auto;
+}
+
+.img-header {
+	width: 100%;
+	height: 300px;
+	display: block;
+	margin: 0 auto;
+	filter: brightness(50%);
+}
+
+.txt-header {
+	font-size: 2.5em;
+	display: block;
+	position: relative;
+	top: 0%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: -250px auto 90px auto;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+.atas-txt {
+	width: 300px;
+	display: block;
+	margin: 5px auto 10px auto;
+}
+
+hr.mirai-garis {
+	width: 90%;
+	border: 1px solid #b00;
+	margin: 110px auto auto auto;
+}
+
+.txt-garis {
+	width: 30%;
+	background: #E6E6E6;
+	display: block;
+	margin: -10px auto 10px auto;
+	position: relative;
+	font-size: 1.4em;
+}
+
+.mirai-content {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	margin: 20px auto;
+}
+
+.mirai-reward {
+	width: 400px;
+	background: #fff;
+	border: 1px solid #fff;
+	display: inline-block;
+	margin: 10px;
+}
+
+.mirai-grid {
+	width: 300px;
+	display: inline-block;
+	margin: 10px 20px 10px 20px;
+	padding: 20px;
+}
+
+.img-content-grid {
+	width: 300px;
+	margin: -20px auto 1px auto;
+	display: block;
+}
+
+.txt-content-grid {
+	display: block;
+	font-size: 1.7em;
+	color: #b00;
+	margin: 0 auto 3px auto;
+	padding: 10px;
+}
+
+.txt-durasi {
+	color: #b00;
+	font-size: 1.4em;
+}
+
+.btn-mirai {
+	font-family: "Teko";
+	width: 200px;
+	height: auto;
+	display: block;
+	margin: 10px auto;
+	padding: 5px;
+	background: transparent;
+	font-size: 1.4em;
+	border: 2px solid #b00;
+	color: #b00;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn-mirai:hover {
+	background: #b00;
+	color: #fff;
+}
+
+.header-login {
+	width: auto;
+	display: block;
+	margin: auto;
+	font-size: 2em;
+	padding: 20px;
+	color: #fff;
+	background: #b00;
+	text-align: left;
+}
+
+.mirai-box-login {
+	width: 100%;
+	margin: 20px auto;
+	display: block;
+}
+
+.mirai-box-login input {
+	font-family: "Teko";
+	width: 95%;
+	height: auto;
+	display: block;
+	margin: 1px auto;
+	padding: 15px 20px;
+	background: transparent;
+	color: #000;
+	font-size: 1.3em;
+	border: 1px solid #000;
+	outline: none;
+}
+
+.mirai-box-login input:focus {
+	border: 1px solid #b00;
+	color: #b00
+}
+
+::placeholder {
+  color: #b00;
+  opacity: 1;
+}
+
+.mirai-box-login button {
+	font-family: "Teko";
+	width: 250px;
+	height: auto;
+	display: block;
+	margin: 40px auto;
+	padding: 10px 5px;
+	background: transparent;
+	font-size: 2em;
+	border: 2px solid #b00;
+	color: #b00;
+	cursor: pointer;
+	outline: none;
+}
+
+.mirai-box-login button:hover {
+	background: #b00;
+	color: #fff;
+}
+
+.footer-login {
+	width: 100%;
+	background:#E6E6E6;
+	padding: 10px 0;
+	margin: -8px auto;
+	font-size: 1em;
+}
+
+.footer-login > u {
+	color: #b00;
+}
