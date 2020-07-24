@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Teko:400,500,600");
+
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, select, textarea, button, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, footer, hgroup, menu, nav, output, 
+ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; vertical-align: baseline; border: 0;}
+
+/* HTML5 */
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary {display: block;}
+
+body {min-width: 1200px; font-size: 14px; color: #fff; font-weight: 400; line-height: 1; text-align: center; font-family: 'Roboto', 'Teko', sans-serif; background: #002f60;}
+
+h1, h2, h3, h4, h5, h6 {letter-spacing: 0.6px; font-weight: 500; font-family: 'Teko'; text-transform: uppercase; font-style: italic;}
+ol, ul, li {list-style: none; list-style-image: none; vertical-align: top;}
+ul {font-size: 0; letter-spacing: -4px;}
+li {font-size: 14px; letter-spacing: 0;}
+img {line-height: inherit; vertical-align: top;}
+strong {font-weight: 400;}
+
+a {text-decoration: none;}
+a:hover {transition: all 0.6s ease;}
+button {letter-spacing: 0.6px; font-weight: 500; font-family: 'Teko'; text-transform: uppercase; font-style: italic;}
+button:hover {transition: all 0.6s ease; cursor: pointer;}
+button:focus {outline: none;}
+
+header {width: 100%; height: 72px; background: #159; position: relative; z-index: 20;}
+header > a {height: 72px; padding: 21px 36px 0; line-height: 72px; position: absolute; top: 0; left: 0;}
+header > p {position: absolute; top: 0; right: 0;}
+header .btn_login {width: 120px; height: 72px; padding-top: 4px; font-size: 21px; color: #fff; letter-spacing: 1.6px; background: #08e;}
+header .btn_login:hover {color: #000; background: #5bf;}
+header .period {width: 400px; margin: 0 auto;}
+header .period > h3 {padding-top: 28px; margin-bottom: 10px; font-size: 22px; color: #ff0; line-height: 18px; font-weight: 500;}
+header .period > h3 > span {padding: 0 2px; font-size: 16px; position: relative; top: -1px;}
+
+.container {padding: 86px 24px 284px; position: relative; overflow: hidden; background: url(../../../images/event/2018/04_roulette/bg.jpg) no-repeat 50% top;}
+.container .event {max-width: 1240px; margin: 0 auto; position: relative; z-index: 1;}
+.container .event .title {position: relative; z-index: 4;}
+.container .event .title > h1 {font-size: 0; text-indent: -9999px;}
+.container .event .title > h2 {font-size: 25px; color: #bef; letter-spacing: 0.2px; font-weight: 400; text-transform: none;}
+.container .event .title .win {width: 800px; margin: 0 auto; position: relative;}
+.container .event .title .win > img {position: absolute; top: -25px; right: -244px;}
+.container .event .howto {width: 100%; margin-top: 123px;}
+.container .event .info {width: 256px; position: absolute; left: 0; top: 526px; z-index: 5;}
+.container .event .info li {width: 100%; line-height: 18px; text-align: left;}
+.container .event .info li.count {height: 80px; margin-bottom: 8px; background: url(../../../images/event/2018/04_roulette/num_bg.png) no-repeat 50% top; display: table;}
+.container .event .info li.count > h4 {width: 176px; padding: 2px 0 0 20px; font-size: 17px; color: #bbb; letter-spacing: 0.8px; font-weight: 600; display: table-cell; vertical-align: middle;}
+.container .event .info li.count > p {width: 80px; font-size: 30px; color: #ff0; text-align: center; font-weight: 700; display: table-cell; vertical-align: middle;}
+.container .event .info li.count_total .num {color: #fff;}
+.container .event .info li.btn_prize {margin-top: 24px; background: url(../../../images/event/2018/04_roulette/btn_prize_off.png) no-repeat 50% top;}
+.container .event .info li.btn_prize button {width: 256px; height: 90px; font-size: 0; text-indent: -9999px; background: url(../../../images/event/2018/04_roulette/btn_prize_off.png) no-repeat 50% top;}
+.container .event .info li.btn_prize button:hover {background: url(../../../images/event/2018/04_roulette/btn_prize_ov.png) no-repeat 50% top;}
+.container .event .info .txt {width: 100%; height: 278px; padding-top: 132px; color: #cef; letter-spacing: 0.2px; font-style: italic; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); border: 2px dashed #388eff; border-radius: 12px; background: rgba(12, 81, 190, 0.8);}
+.container .event .banner {width: 220px; height: 462px; padding: 40px 28px 0 24px; font-style: italic; background: url(../../../images/event/2018/04_roulette/banner.png) no-repeat 50% top; position: absolute; top: 414px; right: 0; z-index: 3;}
+.container .event .banner > h4 {font-size: 24px; color: #d22;}
+.container .event .banner > p {margin-top: 12px; font-size: 20px; color: #666; line-height: 23px; font-weight: 500; font-family: 'Teko';}
+.container .event .banner > p > strong {margin-top: 4px; color: #80b; font-weight: 500; display: block;}
+.container .event .banner > p > span {margin-top: 8px; color: #d22; font-weight: 500; display: block;}
+.container .event .banner > img {position: absolute; top: 258px; left: -22px; z-index: 4; -webkit-animation: move 1s 1; /* Safari 4.0 - 8.0 */ animation: move 1s 1;}
+
+@-webkit-keyframes fadeIn {0% {opacity: 0.3;} 50% {opacity: 1;} 100% {opacity: 0.3;}}
+@keyframes fadeIn {0% {opacity: 0.3;} 50% {opacity: 1;} 100% {opacity: 0.3;}}
+
+@-webkit-keyframes move { from {top: 400px; left: 100px;} to {top: 258px; left: -22px;} }
+@keyframes move { from {top: 400px; left: 100px;} to {top: 258px; left: -22px;} }
+
+.container .event_roulette {width: 100%;}
+.container .roulette {width: 620px; height: 620px; margin: 52px auto 0; background: url(../../../images/event/2018/04_roulette/roulette_bg.png) no-repeat 50%; position: relative; z-index: 3;}
+.container .roulette .roulette_pin {width: 56px; height: 74px; margin-left: -28px; font-size: 0; text-indent: -99999px; background: url(../../../images/event/2018/04_roulette/roulette_pin.png) no-repeat 50% top; position: absolute; top: -20px; left: 50%; z-index: 6;}
+.container .roulette .btn_start {width: 144px; height: 144px; margin: -72px 0 0 -72px; border-radius: 50%; background: url(../../../images/event/2018/04_roulette/btn_start_off.png) no-repeat 50%; position: absolute; top: 50%; left: 50%; z-index: 6;}
+.container .roulette .btn_start > button {width: 144px; height: 144px; text-indent: -99999px; border-radius: 50%; background: url(../../../images/event/2018/04_roulette/btn_start_off.png) no-repeat 50%;}
+.container .roulette .btn_start > button:hover {background: url(../../../images/event/2018/04_roulette/btn_start_ov.png) no-repeat 50%;}
+.container .roulette .light {width: 620px; height: 620px; margin: 52px auto 0; -webkit-animation-name: fadeIn; animation-name: fadeIn; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; animation-duration: 1s; animation-iteration-count: infinite;}
+.container .roulette canvas {margin: -286px 0 0 -286px; position: absolute; top: 50%; left: 50%; z-index: 3;}
+.container .step {width: 100%; background: url(../../../images/event/2018/04_roulette/step_bg.html) no-repeat 50% 30px; position: relative; z-index: 6;}
+.container .step ul {width: 1200px; margin: 0 auto; padding: 0 80px;}
+.container .step li {width: 25%; padding: 0 12px 60px; line-height: 22px; letter-spacing: 0.2px; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); display: inline-block;}
+.container .step li > h5 {width: 60px; height: 60px; margin: 0 auto 36px; font-size: 22px; color: #fef; line-height: 64px; background: url(../../../images/event/2018/04_roulette/step_num.html) no-repeat 50% 50%;}
+.container .step li > h4 {margin-bottom: 16px; font-size: 22px; color: #fd0;}
+
+.caution {width: 100%; padding: 74px 0 58px; background: #0e3c78 url(../../../images/event/2018/04_roulette/caution.png) repeat 50% top; position: relative; z-index: 2;}
+.caution > h4 {width: 220px; height: 60px; margin-left: -110px; font-size: 18px; color: #8cf; line-height: 60px; border-radius: 30px; background: #05c; position: absolute; top: -30px; left: 50%;}
+.caution > ul {max-width: 1240px; margin: 0 auto;}
+.caution > ul > li {color: #69e; line-height: 26px;}
+
+footer {width: 100%; padding: 80px 0 72px; letter-spacing: 0.4px; background: #000;}
+footer .cs {margin: 28px 0 10px; font-size: 14px; color: #e22;}
+footer .cs > a {color: #e22; text-decoration: underline;}
+footer .cs > a:hover {color: #fd0;}
+footer .copy {font-size: 11px; color: #666; text-transform: uppercase;}
+
+/* popup */
+
+.dimmed {width: 100%; height: 100%; text-indent: -99999px; background: url(../../../images/event/2018/04_roulette/dim_bk50.png) repeat; position: fixed; left: 0; top: 0; z-index: 90;}
+.dim_block {width: 100%; height: 100%; text-indent: -99999px; background: none; position: fixed; left: 0; top: 0; z-index: 90;}
+
+.popup {width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99; display: none;}
+.popup .pop_layout {position: absolute; top: 50%; left: 50%; z-index: 99;}
+.popup .pop_layout > button {width: 60px; height: 60px; margin-left: -30px; text-indent: -99999px; border: 3px solid #19f; border-radius: 50%; background: #000 url(../../../images/event/2018/04_roulette/btn_close.png) no-repeat 50% -3px; position: absolute; left: 50%;}
+.popup .pop_layout > button:hover {background-color: #19f; background-position: 50% -63px;}
+
+.pop_prize .pop_layout {width: 784px; margin: -302px 0 0 -392px; padding: 32px 32px 52px; border: 3px solid #19f; border-radius: 12px; background: rgba(0, 85, 187, 0.9); box-shadow: 0 20px 80px rgba(0, 0, 0, 0.4);}
+.pop_prize .pop_layout h4 {font-size: 25px; color: #fff; letter-spacing: 1px;}
+.pop_prize .pop_layout .explain {margin: 2px 0 28px; color: #4af; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); font-style: italic;}
+.pop_prize .pop_layout .list {width: 100%; height: 448px; padding-right: 30px; overflow-y: scroll;}
+.pop_prize .pop_layout .list > ul {width: 100%;}
+.pop_prize .pop_layout .list li {height: 52px; margin-top: 4px; font-size: 0; letter-spacing: -4px; line-height: 54px; border-radius: 26px; background: #038;}
+.pop_prize .pop_layout .list li:first-child {margin-top: none;}
+.pop_prize .pop_layout .list li > p {font-size: 14px; letter-spacing: 0; display: inline-block;}
+.pop_prize .pop_layout .list li > p.date {width: 33%; color: #19f;}
+.pop_prize .pop_layout .list li > p.item {width: 67%; padding-left: 2px; text-align: left;}
+.pop_prize .pop_layout .list li > p.item strong {height: 14px; margin-left: 8px; padding-left: 10px; color: #fd0; line-height: 16px; border-left: 1px solid #fd0; display: inline-block;}
+.pop_prize .pop_layout .list li > p.item span {color: #19f;}
+.pop_prize .pop_layout .list li.none {height: 444px; font-size: 14px; color: #19f; line-height: 444px; letter-spacing: 0;}
+.pop_prize .pop_layout > button {bottom: -30px;}
+
+.pop_result {min-width: 1200px; position: absolute;}
+.pop_result .pop_layout {width: 600px; height: 600px; margin-left: -300px; border-radius: 50%; background: #05b url(../../../images/event/2018/04_roulette/pop_bg.png) no-repeat 50% top; display: table; position: relative; top: 498px;}
+.pop_result .pop_layout > div {font-size: 28px; color: #000; font-weight: 600; font-family: 'Teko'; font-style: italic; display: table-cell; vertical-align: middle;}
+.pop_result .pop_layout .txt {color: #888; line-height: 26px; font-weight: 600;}
+.pop_result .pop_layout .txt > strong {font-weight: 600; display: block;}
+.pop_result .pop_layout .itemname {height: 44px; margin-top: 18px; padding: 0 20px; font-size: 30px; color: #d00; line-height: 44px; letter-spacing: 0.4px; font-weight: 700; text-transform: uppercase; border-top: 2px solid #d00; border-bottom: 2px solid #d00; display: inline-block;}
+.pop_result .pop_layout .itemname > span {color: #444;}
+.pop_result .pop_layout .item {width: 100%; margin: 36px auto 0; position: relative; z-index: 100;}
+.pop_result .pop_layout .item > strong {width: 294px; height: 42px; padding: 0 20px; margin-left: -147px; line-height: 42px; font-weight: 600; letter-spacing: 1px; font-style: normal; border: 2px solid #000; border-radius: 8px; background: #fff; position: absolute; top: 160px; left: 50%; z-index: 101;}
+.pop_result .pop_layout .item > span {margin-top: 48px; padding: 0 25%; font-size: 14px; color: #000; line-height: 20px; letter-spacing: 0; font-weight: 400; font-family: 'Roboto'; text-transform: none; display: block;}
+.pop_result .pop_layout > button {bottom: -16px;}
+
+/* popup (login) */
+
+#layer_basic_popup {width: 600px; margin: -210px 0 0 -300px; position: fixed; top: 50%; left: 50%; z-index: 98;}
+#layer_basic_popup > iframe {width: 100%; border: none; display: block; position: relative; z-index: 99;}

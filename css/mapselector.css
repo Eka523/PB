@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:500|Teko:500,700");
+
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, select, textarea, button, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, footer, hgroup, menu, nav, output, 
+ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; vertical-align: baseline; border: 0;}
+
+/* HTML5 */
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary {display: block;}
+
+h1, h2, h3, h4, h5, h6 {letter-spacing: 0.4px; font-weight: 700; font-family: 'Teko'; text-transform: uppercase;}
+ol, ul, li {font-size: 0; letter-spacing: -4px; list-style: none; list-style-image: none; vertical-align: top;}
+img {line-height: inherit; vertical-align: top;}
+strong {font-weight: 400;}
+
+a {text-decoration: none;}
+a:hover {transition: all 0.6s ease;}
+button {font-size: 0; text-indent: -99999px;}
+button:hover {transition: all 0.6s ease; cursor: pointer;}
+button:focus {outline: none;}
+
+body {min-width: 1200px; color: #000; line-height: 1; font-weight: 500; font-family: 'Roboto', sans-serif; text-align: center; background: #040910 url(../images/mapselector/bg.jpg) no-repeat 50% top;}
+
+header {padding-top: 48px; background: url(../images/mapselector/bg_top.png) no-repeat 50% top;}
+header > h1, h2 {width: 100%; font-size: 0; letter-spacing: -4px;}
+header > h2 {margin-bottom: 26px;}
+
+.container {max-width: 1360px; margin: 30px auto 0; position: relative; z-index: 1;}
+
+.container .map_list {width: 100%; position: absolute; top: 50px; z-index: 2;}
+.container .map_list li {position: absolute; top: 0;}
+.container .map_list li.left {left: 0;}
+.container .map_list li.right {right: 0;}
+
+.container .map_selector {width: 100%; position: relative; z-index: 3;}
+.container .map_selector > div {width: 920px; height: 724px; margin: 0 auto; background: url(../images/mapselector/roulette_bg.png) no-repeat 50%;}
+.container .map_selector .arrow {position: relative; top: 14px; z-index: 5;}
+.container .map_selector .btn_start {width: 148px; height: 148px; margin-left: -74px; border-radius: 50%; background: url(../images/mapselector/btn_start_off.png) no-repeat 50%; position: absolute; top: 288px; left: 50%; z-index: 5;}
+.container .map_selector .btn_start > button {width: 148px; height: 148px; text-indent: -99999px; border-radius: 50%; background: url(../images/mapselector/btn_start_off.png) no-repeat 50%;}
+.container .map_selector .btn_start > button:hover {background: url(../images/mapselector/btn_start_ov.png) no-repeat 50%;}
+.container .map_selector canvas {margin: -316px 0 0 -316px; position: absolute; top: 50%; left: 50%; z-index: 4;}
+
+footer {width: 100%; padding: 29px 0 54px; font-size: 11px; color: #6ea3e2; letter-spacing: 0.4px; text-shadow: 0 1px 0 rgba(136, 221, 255, 0.2); text-transform: uppercase; background: url(../images/mapselector/bg_bottom.png) no-repeat 50% bottom;}
+
+/* popup */
+
+.dimmed {width: 100%; height: 100%; text-indent: -99999px; background: url(../images/mapselector/dim_bk50.png) repeat; position: fixed; left: 0; top: 0; z-index: 90;}
+.dim_block {width: 100%; height: 100%; text-indent: -99999px; background: none; position: fixed; left: 0; top: 0; z-index: 90;}
+
+.popup {width: 100%; min-width: 1200px; height: 100%; position: absolute; top: 0; left: 0; z-index: 98; display: none;}
+.popup .pop_map {width: 612px; height: 612px; margin-left: -306px; background: url(../images/mapselector/pop_bg.png) no-repeat; position: absolute; top: 318px; left: 50%; z-index: 98;}
+.popup .pop_map h3 {width: 320px; height: 116px; margin-left: -160px; font-size: 38px; color: #000; line-height: 124px; background: url(../images/mapselector/pop_name.png) no-repeat 50%; position: absolute; top: 414px; left: 50%; z-index: 99;}
+.popup .pop_map .btn_close {width: 104px; height: 104px; background: url(../images/mapselector/btn_close.png) no-repeat 50%; position: absolute; top: 50px; right: 36px; z-index: 99;}
+.popup .pop_map .btn_close > button {width: 104px; height: 104px; border-radius: 50%; background: url(../images/mapselector/btn_close_off.png) no-repeat 50%;}
+.popup .pop_map .btn_close > button:hover {background: url(../images/mapselector/btn_close_ov.png) no-repeat 50%;}
+.popup .pop_map .map {width: 588px; height: 588px; margin: 11px auto 0;}
